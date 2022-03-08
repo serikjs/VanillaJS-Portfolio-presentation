@@ -258,8 +258,8 @@ window.onload = function (event) {
 			window.addEventListener('resize', function () {
 				if (window.innerWidth < 1080) {
 					slider.classList.remove('active')
-					portfolioHeader.style.display = 'block'
-					portfolioContent.style.display = 'block'
+					portfolioBlock.classList.remove('remove')
+					portfolioBlock.classList.add('show')
 					portfolioTitle.forEach((item) => {
 						item.removeEventListener('mouseenter', enterMain)
 					})
